@@ -1,4 +1,5 @@
 import type { Config } from 'tailwindcss'
+import defaultTheme from 'tailwindcss/defaultTheme'
 
 const config: Config = {
   content: [
@@ -12,6 +13,7 @@ const config: Config = {
     },
     gridTemplateRows: {
       app: 'min-content max-content',
+      ...defaultTheme.gridTemplateRows,
     },
   },
   plugins: [],
