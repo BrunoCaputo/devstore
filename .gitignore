@@ -1,6 +1,15 @@
 # File created using '.gitignore Generator' for Visual Studio Code: https://bit.ly/vscode-gig
-# Created by https://www.toptal.com/developers/gitignore/api/windows,visualstudiocode,nextjs,react
-# Edit at https://www.toptal.com/developers/gitignore?templates=windows,visualstudiocode,nextjs,react
+# Created by https://www.toptal.com/developers/gitignore/api/windows,visualstudiocode,react,nextjs,cypressio
+# Edit at https://www.toptal.com/developers/gitignore?templates=windows,visualstudiocode,react,nextjs,cypressio
+
+### CypressIO ###
+# gitignore template for the CypressIO, browser test framework
+# website: https://www.cypress.io/
+
+cypress/results/*
+cypress/reports/*
+cypress/screenshots/*
+cypress/videos/*
 
 ### NextJS ###
 # dependencies
@@ -94,7 +103,7 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# End of https://www.toptal.com/developers/gitignore/api/windows,visualstudiocode,nextjs,react
+# End of https://www.toptal.com/developers/gitignore/api/windows,visualstudiocode,react,nextjs,cypressio
 
 # Custom rules (everything added below won't be overriden by 'Generate .gitignore File' if you use 'Update' option)
 
