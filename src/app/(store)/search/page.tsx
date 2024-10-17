@@ -6,8 +6,6 @@ import { redirect } from 'next/navigation'
 import { api } from '@/data/api'
 import { Product } from '@/data/types/product'
 
-export const dynamic = 'force-dynamic'
-
 interface SearchPageProps {
   searchParams: {
     q: string
