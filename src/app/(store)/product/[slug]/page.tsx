@@ -4,6 +4,8 @@ import Image from 'next/image'
 import { api } from '@/data/api'
 import { Product } from '@/data/types/product'
 
+export const dynamic = 'force-dynamic'
+
 interface ProductProps {
   params: {
     slug: string
@@ -30,6 +32,13 @@ export async function generateMetadata({
   return {
     title,
   }
+}
+
+export async function generateStaticParams() {
+  const response = await api('/products/featured')
+  const products: Product[] = await response.json()
+
+  return products.map((product) => ({ slug: product.slug }))
 }
 
 export default async function ProductPage({ params }: ProductProps) {

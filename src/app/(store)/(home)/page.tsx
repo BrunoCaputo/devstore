@@ -5,6 +5,8 @@ import Link from 'next/link'
 import { api } from '@/data/api'
 import { Product } from '@/data/types/product'
 
+export const dynamic = 'force-dynamic'
+
 async function getFeaturedProducts(): Promise<Product[]> {
   const response = await api('/products/featured', {
     next: {
